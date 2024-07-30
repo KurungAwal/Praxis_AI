@@ -13,3 +13,10 @@ a += 3
 
 print(a)
 print("Second modulus: ", a % b)
+
+# exponent
+print(a**2)
+
+# floor division vs division
+print("Floor division: ", 5 // b) # round  & convery the result to int
+print("Division: ", 5 / 3) # float result
