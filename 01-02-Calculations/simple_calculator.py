@@ -5,3 +5,4 @@ y = input()
 
 
 print("Result: ", int(x) * int(y))
+
