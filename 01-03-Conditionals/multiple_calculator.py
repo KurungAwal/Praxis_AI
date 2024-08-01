@@ -9,25 +9,36 @@ os.system('cls')
     # multiple = "multiple"
     # divide = "divide"
 
-quit = "quit"
 
-math = ("add", "substract", "multiple", "divide")
+
+math = ("add", "substract", "multiple", "divide", "quit")
+
 w = math[0]
 x = math[1]
 y = math[2]
 z = math[3]
+a = math[4]
+
 
 input1 = input2 = 0
 buffer = ""
 buffer2 = ""
 
 
+
 def calculator():
+
+           
            while True:    
+
 
                 print("----------------------------------------------------------------")
 
-                input_calculate = input("What do you want? Add, substract, multiple, divide or quit? ")
+                input_calculate = input("What do you want? Add, substract, multiple, divide or quit? ") 
+                input_calculate = input_calculate.lower()
+
+                if input_calculate == a:
+                    exit()
 
                 while True:
                         buffer = input("Input your first number: ")
@@ -45,6 +56,8 @@ def calculator():
                         except:
                             print("Invalid input")
 
+                print("----------------------------------------------------------------")
+
                 if input_calculate == w:
                     result = print("Result: ", int(input1) + int(input2))
                         
@@ -58,11 +71,13 @@ def calculator():
                 elif input_calculate == z:
                     result = print("Result: ", int(input1) / int(input2))
 
-                elif input_calculate == quit:
-                    break
-
                 else:
                     print("Invalid input") 
+
+
+
+                
+
 
 
 print("Welcome new user!")
@@ -92,9 +107,3 @@ while True:
             print("----------------------------------------------------------------")
             print("Access denied")
             print("----------------------------------------------------------------")
-        
-
-
-
-                
-
