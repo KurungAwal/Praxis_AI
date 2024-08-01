@@ -13,6 +13,7 @@ def hitung_huruf(teks):
     
     return frekuensi_huruf
 
+
 # Contoh penggunaan
 teks = "budi mulkidi"
 hasil = hitung_huruf(teks)
