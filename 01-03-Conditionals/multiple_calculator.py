@@ -5,9 +5,9 @@ os.system('cls')
 
 
 # add = "add"
-    # substract = "substract"
-    # multiple = "multiple"
-    # divide = "divide"
+# substract = "substract"
+# multiple = "multiple"
+# divide = "divide"
 
 
 
@@ -73,12 +73,6 @@ def calculator():
 
                 else:
                     print("Invalid input") 
-
-
-
-                
-
-
 
 print("Welcome new user!")
 
