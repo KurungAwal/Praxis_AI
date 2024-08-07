@@ -17,7 +17,7 @@ cv2.waitKey(0)
 # threshold the image by setting all pixel values less than 225
 # to 255 (white; foreground) and all pixel values >= 225 to 255
 # (black; background), thereby segmenting the image
-thresh = cv2.threshold(gray, 100, 255, cv2.THRESH_BINARY_INV)[1]
+thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY_INV)[1]
 cv2.imshow("Thresh", thresh)
 cv2.waitKey(0)
 
@@ -25,7 +25,7 @@ cv2.waitKey(0)
 # thresholded image
 cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)
-output = resized.copy()
+output = image.copy()
 # loop over the contours
 for c in cnts:
 	# draw each contour on the output image with a 3px thick purple
